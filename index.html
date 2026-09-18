@@ -1,12 +1,84 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Лабораторна 1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Навчальний вебпроєкт студента">
+    <title>Лабораторна 2 - Головна</title>
 </head>
 <body>
-<p>Студент: Шматов Богдан Денисович</p>
-<p>Група: 6.1214-п</p>
+    <a href="#main">Перейти до основного контенту</a>
+
+    <header>
+        <h1>Мій навчальний вебпроєкт</h1>
+
+        <nav aria-label="Головна навігація">
+            <ul>
+                <li><a href="index.html" aria-current="page">Головна</a></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <article>
+            <header>
+                <h2>Мій перший навчальний проєкт</h2>
+                <p>Ця сторінка створена в межах лабораторної роботи з Web-програмування.</p>
+            </header>
+
+            <figure>
+                <img src="assets/images/user.png"
+                     alt="Зображення навчального вебпроєкту"
+                     width="64">
+                <figcaption>Навчальний вебпроєкт з HTML</figcaption>
+            </figure>
+        </article>
+
+        <section aria-labelledby="advantages-title">
+            <h3 id="advantages-title">Наші переваги</h3>
+            <ul>
+                <li>Семантична структура HTML</li>
+                <li>Доступність вебсторінок</li>
+                <li>Адаптивність</li>
+                <li>Коректна навігація між сторінками</li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="memory-title">
+            <h3 id="memory-title">Використання пам'яті</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Показник</th>
+                        <th scope="col">Значення</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Використання пам'яті</td>
+                        <td>36.0 МБ</td>
+                    </tr>
+                    <tr>
+                        <td>Тип проєкту</td>
+                        <td>Навчальний</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <aside>
+        <h2>Корисні посилання</h2>
+        <ul>
+            <li><a href="https://developer.mozilla.org/uk/docs/Web/HTML" target="_blank" rel="noopener noreferrer">MDN Web Docs — HTML</a></li>
+            <li><a href="https://html.spec.whatwg.org/" target="_blank" rel="noopener noreferrer">HTML Standard</a></li>
+        </ul>
+    </aside>
+
+    <footer>
+        <p>© 2025 Група 6.1214-пі-1</p>
+    </footer>
 </body>
 </html>
