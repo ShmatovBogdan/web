@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <link rel="icon" href="assets/images/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Контактна форма навчального вебпроєкту">
+    <title>Лабораторна 2 - Контакти</title>
+</head>
+<body>
+    <a href="#main">Перейти до основного контенту</a>
+
+    <header>
+        <h1>Мій навчальний вебпроєкт</h1>
+
+        <nav aria-label="Головна навігація">
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="contacts.html" aria-current="page">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section aria-labelledby="contact-form-title">
+            <h2 id="contact-form-title">Зв'яжіться з нами</h2>
+
+            <form action="#" method="get">
+                <div class="form-row">
+                    <label for="name">Ім'я:</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Введіть ім'я"
+                        required
+                        minlength="2"
+                        maxlength="50"
+                        pattern="[А-Яа-яІіЇїЄєҐґA-Za-z' -]+"
+                        title="Дозволені українські та латинські літери, пробіл, тире та апостроф">
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="example@email.com"
+                        required>
+                </div>
+
+                <div class="form-row">
+                    <label for="phone">Телефон:</label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="+380 XX XXX XX XX"
+                        pattern="(?:\+380|0)(?:50|63|66|67|68|73|93|95|96|97|98|99)[0-9]{7}"
+                        title="Введіть номер українського оператора у форматі +380XXXXXXXXX або 0XXXXXXXXX">
+                </div>
+
+                <div class="form-row">
+                    <label for="comment">Коментар:</label>
+                    <textarea
+                        id="comment"
+                        name="comment"
+                        rows="6"
+                        cols="40"
+                        placeholder="Ваш коментар"></textarea>
+                </div>
+
+                <button type="submit">Надіслати</button>
+            </form>
+        </section>
+
+        <section aria-labelledby="contacts-title">
+            <h2 id="contacts-title">Наші контакти</h2>
+            <p>Email: bogdanshmatow@gmail.com</p>
+            <p>Телефон: +380 68 837 10 73</p>
+        </section>
+    </main>
+
+    <aside>
+        <h2>Соціальні мережі</h2>
+        <ul>
+            <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        </ul>
+    </aside>
+
+    <footer>
+        <p>© 2025 Група 6.1214-пі-1</p>
+    </footer>
+</body>
+</html>
