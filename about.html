@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="uk">
 <head>
@@ -5,46 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Інформація про нашу команду">
     <title>Лабораторна 2 - Про нас</title>
+    <link rel="icon" href="assets/images/favicon.png">
 </head>
-<link rel="icon" href="assets/images/favicon.png">
-<body>
-    <a href="#main">Перейти до основного контенту</a>
-
-    <header>
-        <h1>Мій навчальний вебпроєкт</h1>
-
-        <nav aria-label="Головна навігація">
-            <ul>
-                <li><a href="index.html">Головна</a></li>
-                <li><a href="about.html" aria-current="page">Про нас</a></li>
-                <li><a href="contacts.html">Контакти</a></li>
+<body class="page">
+    <a href="#main" class="skip-link">Перейти до основного контенту</a>
+    <header class="header">
+        <h1 class="header__title">Мій навчальний вебпроєкт</h1>
+        <nav class="navigation" aria-label="Головна навігація">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="index.html" class="navigation__link">Головна</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="about.html" class="navigation__link" aria-current="page">Про нас</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="contacts.html" class="navigation__link">Контакти</a>
+                </li>
             </ul>
         </nav>
     </header>
-
-    <main id="main">
-        <article>
-            <header>
-                <h2>Про нашу команду</h2>
-            </header>
-
-            <p>
-                Ми - команда студентів, що створює навчальний вебпроєкт
-                у межах курсу "Web-програмування".
+    <main id="main" class="main">
+        <article class="article">
+            <h2 class="article__title">Про нашу команду</h2>
+            <p class="article__text">
+                Ми - команда студентів, що створює навчальний вебпроєкт у межах курсу "Web-програмування".
             </p>
-
-            <section aria-labelledby="skills-title">
-                <h3 id="skills-title">Наші навички</h3>
-                <ul>
+            <section class="section skills" aria-labelledby="skills-title">
+                <h3 id="skills-title" class="section__title">Наші навички</h3>
+                <ul class="section__list">
                     <li>HTML, семантика, доступність</li>
                     <li>CSS, адаптивна верстка</li>
                     <li>JavaScript, робота з DOM</li>
                 </ul>
             </section>
+            <section class="section history" aria-labelledby="history-title">
+                <h3 id="history-title" class="section__title">Історія</h3>
 
-            <section aria-labelledby="history-title">
-                <h3 id="history-title">Історія</h3>
-                <table>
+                <table class="history__table">
                     <thead>
                         <tr>
                             <th scope="col">Рік</th>
@@ -67,10 +66,9 @@
                     </tbody>
                 </table>
             </section>
-
-            <section aria-labelledby="values-title">
-                <h3 id="values-title">Цінності</h3>
-                <ul>
+            <section class="section values" aria-labelledby="values-title">
+                <h3 id="values-title" class="section__title">Цінності</h3>
+                <ul class="section__list">
                     <li>Якість коду та прозорість</li>
                     <li>Навчання через практику</li>
                     <li>Комунікація та підтримка</li>
@@ -78,9 +76,8 @@
             </section>
         </article>
     </main>
-
-    <footer>
-        <p>© 2025 Група 6.1214-пі-1</p>
+    <footer class="footer">
+        <p class="footer__text">© 2025 Група 6.1214-пі-1</p>
     </footer>
 </body>
 </html>

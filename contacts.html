@@ -7,29 +7,32 @@
     <meta name="description" content="Контактна форма навчального вебпроєкту">
     <title>Лабораторна 2 - Контакти</title>
 </head>
-<body>
-    <a href="#main">Перейти до основного контенту</a>
-
-    <header>
-        <h1>Мій навчальний вебпроєкт</h1>
-
-        <nav aria-label="Головна навігація">
-            <ul>
-                <li><a href="index.html">Головна</a></li>
-                <li><a href="about.html">Про нас</a></li>
-                <li><a href="contacts.html" aria-current="page">Контакти</a></li>
+<body class="page">
+    <a href="#main" class="skip-link">Перейти до основного контенту</a>
+    <header class="header">
+        <h1 class="header__title">Мій навчальний вебпроєкт</h1>
+        <nav class="navigation" aria-label="Головна навігація">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="index.html" class="navigation__link">Головна</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="about.html" class="navigation__link">Про нас</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="contacts.html" class="navigation__link" aria-current="page">Контакти</a>
+                </li>
             </ul>
         </nav>
     </header>
-
-    <main id="main">
-        <section aria-labelledby="contact-form-title">
-            <h2 id="contact-form-title">Зв'яжіться з нами</h2>
-
-            <form action="#" method="get">
-                <div class="form-row">
-                    <label for="name">Ім'я:</label>
+    <main id="main" class="main">
+        <section class="section contact-form" aria-labelledby="contact-form-title">
+            <h2 id="contact-form-title" class="section__title">Зв'яжіться з нами</h2>
+            <form class="form" action="#" method="get">
+                <div class="form__row">
+                    <label class="form__label" for="name">Ім'я:</label>
                     <input
+                        class="form__input"
                         type="text"
                         id="name"
                         name="name"
@@ -40,20 +43,20 @@
                         pattern="[А-Яа-яІіЇїЄєҐґA-Za-z' -]+"
                         title="Дозволені українські та латинські літери, пробіл, тире та апостроф">
                 </div>
-
-                <div class="form-row">
-                    <label for="email">Email:</label>
+                <div class="form__row">
+                    <label class="form__label" for="email">Email:</label>
                     <input
+                        class="form__input"
                         type="email"
                         id="email"
                         name="email"
                         placeholder="example@email.com"
                         required>
                 </div>
-
-                <div class="form-row">
-                    <label for="phone">Телефон:</label>
+                <div class="form__row">
+                    <label class="form__label" for="phone">Телефон:</label>
                     <input
+                        class="form__input"
                         type="tel"
                         id="phone"
                         name="phone"
@@ -61,38 +64,44 @@
                         pattern="(?:\+380|0)(?:50|63|66|67|68|73|93|95|96|97|98|99)[0-9]{7}"
                         title="Введіть номер українського оператора у форматі +380XXXXXXXXX або 0XXXXXXXXX">
                 </div>
-
-                <div class="form-row">
-                    <label for="comment">Коментар:</label>
+                <div class="form__row">
+                    <label class="form__label" for="comment">Коментар:</label>
                     <textarea
+                        class="form__textarea"
                         id="comment"
                         name="comment"
                         rows="6"
                         cols="40"
                         placeholder="Ваш коментар"></textarea>
                 </div>
-
-                <button type="submit">Надіслати</button>
+                <button class="form__button" type="submit">Надіслати</button>
             </form>
         </section>
-
-        <section aria-labelledby="contacts-title">
-            <h2 id="contacts-title">Наші контакти</h2>
-            <p>Email: bogdanshmatow@gmail.com</p>
-            <p>Телефон: +380 68 837 10 73</p>
+        <section class="section contacts" aria-labelledby="contacts-title">
+            <h2 id="contacts-title" class="section__title">Наші контакти</h2>
+            <p class="contacts__text">Email: bogdanshmatow@gmail.com</p>
+            <p class="contacts__text">Телефон: +380 68 837 10 73</p>
         </section>
     </main>
-
-    <aside>
-        <h2>Соціальні мережі</h2>
-        <ul>
-            <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+    <aside class="aside">
+        <h2 class="aside__title">Соціальні мережі</h2>
+        <ul class="aside__list">
+            <li>
+                <a class="aside__link"
+                   href="https://github.com/"
+                   target="_blank"
+                   rel="noopener noreferrer">GitHub</a>
+            </li>
+            <li>
+                <a class="aside__link"
+                   href="https://www.linkedin.com/"
+                   target="_blank"
+                   rel="noopener noreferrer">LinkedIn</a>
+            </li>
         </ul>
     </aside>
-
-    <footer>
-        <p>© 2025 Група 6.1214-пі-1</p>
+    <footer class="footer">
+        <p class="footer__text">© 2025 Група 6.1214-пі-1</p>
     </footer>
 </body>
 </html>
