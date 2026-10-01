@@ -5,51 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Навчальний вебпроєкт студента">
     <title>Лабораторна 2 - Головна</title>
+    <link rel="icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<link rel="icon" href="assets/images/favicon.png">
-<body>
-    <a href="#main">Перейти до основного контенту</a>
-
-    <header>
-        <h1>Мій навчальний вебпроєкт</h1>
-
-        <nav aria-label="Головна навігація">
-            <ul>
-                <li><a href="index.html" aria-current="page">Головна</a></li>
-                <li><a href="about.html">Про нас</a></li>
-                <li><a href="contacts.html">Контакти</a></li>
+<body class="page">
+    <a href="#main" class="skip-link">Перейти до основного контенту</a>
+    <header class="header">
+        <h1 class="header__title">Мій навчальний вебпроєкт</h1>
+        <nav class="navigation" aria-label="Головна навігація">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="index.html" class="navigation__link" aria-current="page">Головна</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="about.html" class="navigation__link">Про нас</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="contacts.html" class="navigation__link">Контакти</a>
+                </li>
             </ul>
         </nav>
     </header>
-
-    <main id="main">
-        <article>
-            <header>
-                <h2>Мій перший навчальний проєкт</h2>
-                <p>Ця сторінка створена в межах лабораторної роботи з Web-програмування.</p>
+    <main id="main" class="main">
+        <article class="article">
+            <header class="article__header">
+                <h2 class="article__title">Мій перший навчальний проєкт</h2>
+                <p class="article__text">
+                    Ця сторінка створена в межах лабораторної роботи з Web-програмування.
+                </p>
             </header>
-
-            <figure>
-                <img src="assets/images/user.png"
+            <figure class="figure">
+                <img class="figure__image"
+                     src="assets/images/favicon.png"
                      alt="Зображення навчального вебпроєкту"
                      width="64">
-                <figcaption>Навчальний вебпроєкт з HTML</figcaption>
+                <figcaption class="figure__caption">
+                    Навчальний вебпроєкт з HTML
+                </figcaption>
             </figure>
         </article>
-
-        <section aria-labelledby="advantages-title">
-            <h3 id="advantages-title">Наші переваги</h3>
-            <ul>
+        <section class="section advantages" aria-labelledby="advantages-title">
+            <h3 id="advantages-title" class="section__title">Наші переваги</h3>
+            <ul class="section__list">
                 <li>Семантична структура HTML</li>
                 <li>Доступність вебсторінок</li>
                 <li>Адаптивність</li>
                 <li>Коректна навігація між сторінками</li>
             </ul>
         </section>
+        <section class="section memory" aria-labelledby="memory-title">
+            <h3 id="memory-title" class="section__title">Використання пам'яті</h3>
 
-        <section aria-labelledby="memory-title">
-            <h3 id="memory-title">Використання пам'яті</h3>
-            <table>
+            <table class="memory__table">
                 <thead>
                     <tr>
                         <th scope="col">Показник</th>
@@ -69,17 +76,29 @@
             </table>
         </section>
     </main>
-
-    <aside>
-        <h2>Корисні посилання</h2>
-        <ul>
-            <li><a href="https://developer.mozilla.org/uk/docs/Web/HTML" target="_blank" rel="noopener noreferrer">MDN Web Docs - HTML</a></li>
-            <li><a href="https://html.spec.whatwg.org/" target="_blank" rel="noopener noreferrer">HTML Standard</a></li>
+    <aside class="aside">
+        <h2 class="aside__title">Корисні посилання</h2>
+        <ul class="aside__list">
+            <li>
+                <a class="aside__link"
+                   href="https://developer.mozilla.org/uk/docs/Web/HTML"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    MDN Web Docs - HTML
+                </a>
+            </li>
+            <li>
+                <a class="aside__link"
+                   href="https://html.spec.whatwg.org/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    HTML Standard
+                </a>
+            </li>
         </ul>
     </aside>
-
-    <footer>
-        <p>© 2025 Група 6.1214-пі-1</p>
+    <footer class="footer">
+        <p class="footer__text">© 2025 Група 6.1214-пі-1</p>
     </footer>
 </body>
 </html>
