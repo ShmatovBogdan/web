@@ -1,84 +1,170 @@
-
 <!DOCTYPE html>
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Інформація про нашу команду">
-    <title>Лабораторна 2 - Про нас</title>
+    <title>Про нас</title>
     <link rel="icon" href="assets/images/favicon.png">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="page">
+<body>
     <a href="#main" class="skip-link">Перейти до основного контенту</a>
-    <header class="header">
-        <h1 class="header__title">Мій навчальний вебпроєкт</h1>
-        <nav class="navigation" aria-label="Головна навігація">
-            <ul class="navigation__list">
-                <li class="navigation__item">
-                    <a href="index.html" class="navigation__link">Головна</a>
-                </li>
-                <li class="navigation__item">
-                    <a href="about.html" class="navigation__link" aria-current="page">Про нас</a>
-                </li>
-                <li class="navigation__item">
-                    <a href="contacts.html" class="navigation__link">Контакти</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main id="main" class="main">
-        <article class="article">
-            <h2 class="article__title">Про нашу команду</h2>
-            <p class="article__text">
-                Ми - команда студентів, що створює навчальний вебпроєкт у межах курсу "Web-програмування".
-            </p>
-            <section class="section skills" aria-labelledby="skills-title">
-                <h3 id="skills-title" class="section__title">Наші навички</h3>
-                <ul class="section__list">
-                    <li>HTML, семантика, доступність</li>
-                    <li>CSS, адаптивна верстка</li>
-                    <li>JavaScript, робота з DOM</li>
+    <div class="layout">
+        <header class="header">
+            <h1 class="header__title">Мій навчальний вебпроєкт</h1>
+            <nav class="nav" aria-label="Головна навігація">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">
+                            Головна
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html"
+                           class="nav__link"
+                           aria-current="page">
+                            Про нас
+                        </a>
+                    </li>
+                    <li class="nav__item nav__item--cta">
+                        <a href="contacts.html" class="nav__link nav__link--cta">
+                            Контакти
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <aside class="aside">
+            <section class="aside__section">
+                <h2 class="aside__title">Корисні посилання</h2>
+                <ul class="aside__list">
+                    <li>
+                        <a class="aside__link"
+                           href="https://developer.mozilla.org/uk/docs/Web/HTML"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            MDN Web Docs - HTML
+                        </a>
+                    </li>
+                    <li>
+                        <a class="aside__link"
+                           href="https://html.spec.whatwg.org/"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            HTML Standard
+                        </a>
+                    </li>
                 </ul>
             </section>
-            <section class="section history" aria-labelledby="history-title">
-                <h3 id="history-title" class="section__title">Історія</h3>
+            <section class="aside__section">
+                <h2 class="aside__title">Навчання</h2>
+                <ul class="aside__list">
+                    <li>
+                        <a class="aside__link" href="index.html">
+                            Новини
+                        </a>
+                    </li>
+                    <li>
+                        <a class="aside__link" href="contacts.html">
+                            Зворотний зв'язок
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </aside>
+        <main id="main" class="main">
+            <article class="about">
+                <h2 class="about__title">Про нашу команду</h2>
+                <p class="about__text">
+                    Ми - команда студентів, що створює навчальний
+                    вебпроєкт у межах курсу "Web-програмування".
+                </p>
+                <section class="about-section"
+                         aria-labelledby="skills-title">
+                    <h3 id="skills-title" class="about-section__title">
+                        Наші навички
+                    </h3>
+                    <ul class="about-section__list">
+                        <li>HTML, семантика, доступність</li>
+                        <li>CSS, адаптивна верстка</li>
+                        <li>JavaScript, робота з DOM</li>
+                    </ul>
+                </section>
+                <section class="about-section"
+                         aria-labelledby="history-title">
+                    <h3 id="history-title" class="about-section__title">
+                        Історія
+                    </h3>
+                    <table class="history__table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Рік</th>
+                                <th scope="col">Подія</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2023</td>
+                                <td>Перші навчальні проєкти</td>
+                            </tr>
+                            <tr>
+                                <td>2024</td>
+                                <td>Командні пет-проєкти та хакатони</td>
+                            </tr>
+                            <tr>
+                                <td>2025</td>
+                                <td>Запуск навчального лендінгу</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section class="about-section"
+                         aria-labelledby="values-title">
+                    <h3 id="values-title" class="about-section__title">
+                        Цінності
+                    </h3>
+                    <ul class="about-section__list">
+                        <li>Якість коду та прозорість</li>
+                        <li>Навчання через практику</li>
+                        <li>Комунікація та підтримка</li>
+                    </ul>
+                </section>
+            </article>
+        </main>
+        <footer class="footer">
+            <div class="footer__inner">
+                <div class="footer__column">
+                    <h2 class="footer__title">Наші контакти</h2>
+                    <p class="footer__text">
+                        Email:
+                        <a href="mailto:student@example.com">
+                            student@example.com
+                        </a>
+                    </p>
+                    <p class="footer__text">
+                        Телефон: +380 00 000 00 00
+                    </p>
+                </div>
+                <div class="footer__column">
+                    <h2 class="footer__title">Навігація</h2>
 
-                <table class="history__table">
-                    <thead>
-                        <tr>
-                            <th scope="col">Рік</th>
-                            <th scope="col">Подія</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>2023</td>
-                            <td>Перші навчальні проєкти</td>
-                        </tr>
-                        <tr>
-                            <td>2024</td>
-                            <td>Командні пет-проєкти та хакатони</td>
-                        </tr>
-                        <tr>
-                            <td>2025</td>
-                            <td>Запуск навчального лендінгу</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-            <section class="section values" aria-labelledby="values-title">
-                <h3 id="values-title" class="section__title">Цінності</h3>
-                <ul class="section__list">
-                    <li>Якість коду та прозорість</li>
-                    <li>Навчання через практику</li>
-                    <li>Комунікація та підтримка</li>
-                </ul>
-            </section>
-        </article>
-    </main>
-    <footer class="footer">
-        <p class="footer__text">© 2025 Група 6.1214-пі-1</p>
-    </footer>
+                    <a href="index.html">Головна</a>
+                    <a href="about.html">Про нас</a>
+                    <a href="contacts.html">Контакти</a>
+                </div>
+                <div class="footer__column">
+                    <h2 class="footer__title">Про проєкт</h2>
+
+                    <p class="footer__text">
+                        Навчальний вебпроєкт з Web-програмування.
+                    </p>
+                </div>
+            </div>
+            <p class="footer__copyright">
+                © 2025 Група 6.1214-пі-1
+            </p>
+        </footer>
+    </div>
 </body>
 </html>
