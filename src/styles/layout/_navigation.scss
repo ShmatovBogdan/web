@@ -1,0 +1,24 @@
+@use '../abstracts/variables' as vars;
+
+.navigation__list {
+  display: flex;
+  justify-content: center;
+  gap: vars.$space-large;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation__link {
+  color: var(--color-header-text);
+  text-decoration: none;
+
+  &:hover,
+  &[aria-current='page'] {
+    text-decoration: underline;
+  }
+
+  &[aria-current='page'] {
+    font-weight: bold;
+  }
+}

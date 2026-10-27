@@ -1,0 +1,12 @@
+@use '../abstracts/variables' as vars;
+
+.article {
+  margin-bottom: 30px;
+  padding: vars.$space-large;
+  background-color: var(--color-surface);
+  border-radius: vars.$radius-card;
+}
+
+.article__title {
+  margin-top: 0;
+}

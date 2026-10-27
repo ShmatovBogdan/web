@@ -1,0 +1,12 @@
+@use '../abstracts/variables' as vars;
+
+.section {
+  margin-bottom: 30px;
+  padding: vars.$space-large;
+  background-color: var(--color-surface);
+  border-radius: vars.$radius-card;
+}
+
+.section__title {
+  margin-top: 0;
+}

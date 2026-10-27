@@ -1,0 +1,41 @@
+@use '../abstracts/variables' as vars;
+
+.form {
+  max-width: 600px;
+}
+
+.form__row {
+  margin-bottom: vars.$space-medium;
+}
+
+.form__label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form__input,
+.form__textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font: inherit;
+}
+
+.form__textarea {
+  resize: vertical;
+}
+
+.form__button {
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 4px;
+  background-color: var(--color-header);
+  color: var(--color-header-text);
+  cursor: pointer;
+
+  &:hover {
+    background-color: #555;
+  }
+}

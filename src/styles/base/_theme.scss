@@ -1,0 +1,30 @@
+@use '../abstracts/variables' as vars;
+
+:root {
+  color-scheme: light dark;
+  --color-text: #{vars.$color-text};
+  --color-background: #{vars.$color-background};
+  --color-surface: #{vars.$color-surface};
+  --color-header: #{vars.$color-dark};
+  --color-header-text: #fff;
+  --color-muted: #{vars.$color-muted};
+  --color-border: #{vars.$color-border};
+  --color-table-heading: #eee;
+  --color-link: #333;
+  --color-link-hover: #666;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text: #eee;
+    --color-background: #181818;
+    --color-surface: #252525;
+    --color-header: #101010;
+    --color-header-text: #fff;
+    --color-muted: #bbb;
+    --color-border: #555;
+    --color-table-heading: #383838;
+    --color-link: #eee;
+    --color-link-hover: #bbb;
+  }
+}

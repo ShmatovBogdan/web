@@ -1,0 +1,7 @@
+@use '../abstracts/variables' as vars;
+
+.main {
+  max-width: vars.$content-width;
+  margin: 30px auto;
+  padding: 0 vars.$space-large;
+}
