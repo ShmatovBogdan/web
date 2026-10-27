@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+.page {
+  min-height: 100vh;
+}
+
+a {
+  color: var(--color-link);
+}

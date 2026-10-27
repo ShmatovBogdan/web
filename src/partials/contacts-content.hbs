@@ -1,0 +1,38 @@
+<main id="main" class="main">
+    <section class="section contact-form" aria-labelledby="contact-form-title">
+        <h2 id="contact-form-title" class="section__title">Зв'яжіться з нами</h2>
+        <form class="form" action="#" method="get">
+            <div class="form__row">
+                <label class="form__label" for="name">Ім'я:</label>
+                <input class="form__input" type="text" id="name" name="name"
+                       placeholder="Введіть ім'я" required minlength="2" maxlength="50"
+                       pattern="[А-Яа-яІіЇїЄєҐґA-Za-z' -]+"
+                       title="Дозволені українські та латинські літери, пробіл, тире та апостроф">
+            </div>
+            <div class="form__row">
+                <label class="form__label" for="email">Email:</label>
+                <input class="form__input" type="email" id="email" name="email"
+                       placeholder="example@email.com" required>
+            </div>
+            <div class="form__row">
+                <label class="form__label" for="phone">Телефон:</label>
+                <input class="form__input" type="tel" id="phone" name="phone"
+                       placeholder="+380 XX XXX XX XX"
+                       pattern="(?:\+380|0)(?:50|63|66|67|68|73|93|95|96|97|98|99)[0-9]{7}"
+                       title="Введіть номер українського оператора у форматі +380XXXXXXXXX або 0XXXXXXXXX">
+            </div>
+            <div class="form__row">
+                <label class="form__label" for="comment">Коментар:</label>
+                <textarea class="form__textarea" id="comment" name="comment" rows="6" cols="40"
+                          placeholder="Ваш коментар"></textarea>
+            </div>
+            <button class="form__button" type="submit">Надіслати</button>
+        </form>
+    </section>
+
+    <section class="section contacts" aria-labelledby="contacts-title">
+        <h2 id="contacts-title" class="section__title">Наші контакти</h2>
+        <p class="contacts__text">Email: {{studentEmail}}</p>
+        <p class="contacts__text">Телефон: +380 68 837 10 73</p>
+    </section>
+</main>

@@ -1,0 +1,21 @@
+@use '../abstracts/variables' as vars;
+
+.aside {
+  max-width: vars.$content-width;
+  margin: 30px auto;
+  padding: vars.$space-large;
+  background-color: var(--color-surface);
+  border-radius: vars.$radius-card;
+}
+
+.aside__title {
+  margin-top: 0;
+}
+
+.aside__link {
+  color: var(--color-link);
+
+  &:hover {
+    color: var(--color-link-hover);
+  }
+}

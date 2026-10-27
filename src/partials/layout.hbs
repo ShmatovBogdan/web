@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    {{> head}}
+</head>
+<body class="page">
+    <a href="#main" class="skip-link">Перейти до основного контенту</a>
+
+    {{> header}}
+
+    {{> (lookup . "contentPartial")}}
+
+    {{#if asideLinks}}
+        {{> aside}}
+    {{/if}}
+
+    {{> footer}}
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>

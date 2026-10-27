@@ -1,0 +1,14 @@
+ .figure {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.figure__image {
+  max-width: 100%;
+  height: auto;
+}
+
+.figure__caption {
+  margin-top: 8px;
+  color: var(--color-muted);
+}
