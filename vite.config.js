@@ -1,8 +1,9 @@
 import { resolve } from 'node:path';
 import { defineConfig } from 'vite';
 import handlebars from 'vite-plugin-handlebars';
+import tailwindcss from '@tailwindcss/vite';
 
-const siteConfig  = {
+const siteConfig = {
   mainPageName: 'Web-Програмування - Головна',
   siteName: 'Навчальний вебпроект',
   labName: 'Мій навчальний вебпроєкт',
@@ -61,11 +62,11 @@ function getPageContext(pagePath) {
 
 export default defineConfig({
   plugins: [
+    tailwindcss(),
     handlebars({
       partialDirectory: resolve(rootDir, 'src/partials'),
       context: getPageContext,
     }),
   ],
-
   input: htmlPages,
 });
