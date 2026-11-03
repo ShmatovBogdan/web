@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@source "../../";
+
+@theme static {
+    --color-text: #333;
+    --color-background: #fff;
+    --color-surface: #fff;
+    --color-header: #222;
+    --color-header-text: #fff;
+    --color-muted: #777;
+    --color-border: #ddd;
+    --color-table-heading: #eee;
+    --color-link: #333;
+    --color-link-hover: #666;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer components {
+    .card {
+        @apply rounded-lg shadow-md;
+    }
+
+    .card__title {
+        @apply text-xl font-bold;
+    }
+}

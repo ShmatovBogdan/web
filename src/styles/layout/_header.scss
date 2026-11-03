@@ -1,12 +1,32 @@
 @use '../abstracts/variables' as vars;
 
 .header {
-  padding: vars.$space-large;
+  padding: vars.$space-large vars.$space-medium;
   background-color: var(--color-header);
   color: var(--color-header-text);
   text-align: center;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
 }
 
 .header__title {
   margin: 0 0 vars.$space-medium;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.header__description {
+  margin: 0;
+  font-size: 1rem;
+  opacity: 0.85;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: vars.$space-medium;
+  }
+
+  .header__title {
+    font-size: 1.5rem;
+  }
 }
