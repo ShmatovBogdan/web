@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@source "../../";
 
 @theme static {
     --color-text: #333;
@@ -15,6 +14,19 @@
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+.dark {
+    --color-text: #eee;
+    --color-background: #181818;
+    --color-surface: #242424;
+    --color-header: #111;
+    --color-header-text: #fff;
+    --color-muted: #aaa;
+    --color-border: #444;
+    --color-table-heading: #303030;
+    --color-link: #eee;
+    --color-link-hover: #bbb;
+}
 
 @layer components {
     .card {
