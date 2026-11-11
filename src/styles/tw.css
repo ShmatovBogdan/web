@@ -16,24 +16,20 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 .dark {
+    color-scheme: dark;
+
     --color-text: #eee;
     --color-background: #181818;
-    --color-surface: #242424;
-    --color-header: #111;
+    --color-surface: #252525;
+    --color-header: #101010;
     --color-header-text: #fff;
-    --color-muted: #aaa;
-    --color-border: #444;
-    --color-table-heading: #303030;
+    --color-muted: #bbb;
+    --color-border: #555;
+    --color-table-heading: #383838;
     --color-link: #eee;
     --color-link-hover: #bbb;
 }
 
-@layer components {
-    .card {
-        @apply rounded-lg shadow-md;
-    }
-
-    .card__title {
-        @apply text-xl font-bold;
-    }
+:root {
+    color-scheme: light;
 }
