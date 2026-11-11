@@ -1,38 +1,72 @@
-<main id="main" class="main">
-    <section class="section contact-form" aria-labelledby="contact-form-title">
-        <h2 id="contact-form-title" class="section__title">Зв'яжіться з нами</h2>
-        <form class="form" action="#" method="get">
-            <div class="form__row">
-                <label class="form__label" for="name">Ім'я:</label>
-                <input class="form__input" type="text" id="name" name="name"
+
+<main id="main" class="main mx-auto max-w-5xl space-y-10 px-6 py-10 text-text">
+
+    <section class="section contact-form rounded-xl border border-border bg-surface p-6 shadow-sm"
+             aria-labelledby="contact-form-title">
+
+        <h2 id="contact-form-title" class="section__title mb-6 text-2xl font-bold">
+            Зв'яжіться з нами
+        </h2>
+
+        <form class="form space-y-5" action="#" method="get">
+
+            <div class="form__row flex flex-col gap-2">
+                <label class="form__label font-medium" for="name">Ім'я:</label>
+                <input class="form__input w-full rounded-lg border border-border bg-background px-4 py-3 text-text placeholder:text-muted outline-none transition focus:border-link focus:ring-2 focus:ring-link/20"
+                       type="text" id="name" name="name"
                        placeholder="Введіть ім'я" required minlength="2" maxlength="50"
                        pattern="[А-Яа-яІіЇїЄєҐґA-Za-z' -]+"
                        title="Дозволені українські та латинські літери, пробіл, тире та апостроф">
             </div>
-            <div class="form__row">
-                <label class="form__label" for="email">Email:</label>
-                <input class="form__input" type="email" id="email" name="email"
+
+            <div class="form__row flex flex-col gap-2">
+                <label class="form__label font-medium" for="email">Email:</label>
+                <input class="form__input w-full rounded-lg border border-border bg-background px-4 py-3 text-text placeholder:text-muted outline-none transition focus:border-link focus:ring-2 focus:ring-link/20"
+                       type="email" id="email" name="email"
                        placeholder="example@email.com" required>
             </div>
-            <div class="form__row">
-                <label class="form__label" for="phone">Телефон:</label>
-                <input class="form__input" type="tel" id="phone" name="phone"
+
+            <div class="form__row flex flex-col gap-2">
+                <label class="form__label font-medium" for="phone">Телефон:</label>
+                <input class="form__input w-full rounded-lg border border-border bg-background px-4 py-3 text-text placeholder:text-muted outline-none transition focus:border-link focus:ring-2 focus:ring-link/20"
+                       type="tel" id="phone" name="phone"
                        placeholder="+380 XX XXX XX XX"
                        pattern="(?:\+380|0)(?:50|63|66|67|68|73|93|95|96|97|98|99)[0-9]{7}"
                        title="Введіть номер українського оператора у форматі +380XXXXXXXXX або 0XXXXXXXXX">
             </div>
-            <div class="form__row">
-                <label class="form__label" for="comment">Коментар:</label>
-                <textarea class="form__textarea" id="comment" name="comment" rows="6" cols="40"
+
+            <div class="form__row flex flex-col gap-2">
+                <label class="form__label font-medium" for="comment">Коментар:</label>
+                <textarea class="form__textarea min-h-32 w-full resize-y rounded-lg border border-border bg-background px-4 py-3 text-text placeholder:text-muted outline-none transition focus:border-link focus:ring-2 focus:ring-link/20"
+                          id="comment" name="comment" rows="6" cols="40"
                           placeholder="Ваш коментар"></textarea>
             </div>
-            <button class="form__button" type="submit">Надіслати</button>
+
+            <button class="form__button rounded-lg bg-header px-6 py-3 font-semibold text-header-text transition hover:opacity-80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-link"
+                    type="submit">
+                Надіслати
+            </button>
+
         </form>
     </section>
 
-    <section class="section contacts" aria-labelledby="contacts-title">
-        <h2 id="contacts-title" class="section__title">Наші контакти</h2>
-        <p class="contacts__text">Email: {{studentEmail}}</p>
-        <p class="contacts__text">Телефон: +380 68 837 10 73</p>
+    <section class="section contacts rounded-xl border border-border bg-surface p-6 shadow-sm"
+             aria-labelledby="contacts-title">
+
+        <h2 id="contacts-title" class="section__title mb-5 text-2xl font-bold">
+            Наші контакти
+        </h2>
+
+        <div class="space-y-3 text-text">
+            <p class="contacts__text">
+                Email: <span class="font-medium">{{studentEmail}}</span>
+            </p>
+
+            <p class="contacts__text">
+                Телефон: <span class="font-medium">+380 68 837 10 73</span>
+            </p>
+        </div>
+
     </section>
+
 </main>

@@ -1,2 +1,7 @@
 import './styles/tw.css';
-import './styles/main.scss';
+
+import { initThemeToggle } from './js/common/theme.js';
+import { initAbout } from './js/app/aboutPage.js';
+
+initThemeToggle();
+initAbout();

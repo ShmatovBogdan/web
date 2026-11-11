@@ -3,16 +3,26 @@
 <head>
     {{> head}}
 </head>
-<body class="page">
-    <a href="#main" class="skip-link">Перейти до основного контенту</a>
+
+<body class="min-h-screen flex flex-col bg-background text-text transition-colors duration-200" data-page="{{pageCode}}">
+    <a
+        href="#main"
+        class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:p-3 focus:bg-surface focus:text-text focus:rounded-lg"
+    >
+        Перейти до основного контенту
+    </a>
 
     {{> header}}
 
-    {{> (lookup . "contentPartial")}}
+    <div class="flex-1 w-full max-w-7xl mx-auto p-6 flex flex-col lg:flex-row gap-6">
 
-    {{#if asideLinks}}
-        {{> aside}}
-    {{/if}}
+        {{> (lookup . "contentPartial")}}
+
+        {{#if asideLinks}}
+            {{> aside}}
+        {{/if}}
+
+    </div>
 
     {{> footer}}
 

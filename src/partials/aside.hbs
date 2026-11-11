@@ -1,9 +1,19 @@
-<aside class="aside">
-    <h2 class="aside__title">{{asideTitle}}</h2>
-    <ul class="aside__list">
+<aside class="p-6 bg-surface border border-border rounded-xl">
+    <h2 class="text-lg font-semibold text-text mb-4">
+        {{asideTitle}}
+    </h2>
+
+    <ul class="flex flex-col gap-3 list-none p-0 m-0">
         {{#each asideLinks}}
             <li>
-                <a class="aside__link" href="{{url}}" target="_blank" rel="noopener noreferrer">{{text}}</a>
+                <a
+                    class="text-link hover:text-link-hover transition-colors duration-200"
+                    href="{{url}}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    {{text}}
+                </a>
             </li>
         {{/each}}
     </ul>
